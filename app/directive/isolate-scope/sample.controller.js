@@ -1,5 +1,3 @@
-var app = angular.module('myApp',[]);
-
 app.controller('MyControllerOne',function($scope,MyService){
 
 	console.log('Initialized MyControllerOne');
@@ -12,19 +10,4 @@ app.controller('MyControllerOne',function($scope,MyService){
     	});
 	};
 	
-});
-
-app.directive('myFirstDirective',function(){
-
-	console.log('Initialized myFirstDirective');
-
-	return {
-		restrict : 'E',
-		scope : {
-			'name' : '@dirName',
-			'age'  : '='
-		},
-		templateUrl : "sample.directive.html"
-	};
-
 });
